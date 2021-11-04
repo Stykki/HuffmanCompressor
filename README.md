@@ -1,18 +1,18 @@
--------------------- Compiling ----------------------
-g++ -std=c++11 main.cpp -o compressor
-(This has been tested on 2 windows 10 machines and on a rpi4 running ubuntu 20.4)
+-------------------- Compiling ----------------------  
+g++ -std=c++11 main.cpp -o compressor  
+(This has been tested on 2 windows 10 machines and on a rpi4 running ubuntu 20.4)  
 
--------------------- Compressing --------------------
+-------------------- Compressing --------------------  
 
-./compressor -c {Filename to compress} {output file name}
-
-
--------------------- Decompressing ------------------
-
-./compressor -u {Compressed file} {output file name}
+./compressor -c {Filename to compress} {output file name}  
 
 
--------------------- How it works -------------------
+-------------------- Decompressing ------------------  
+
+./compressor -u {Compressed file} {output file name}  
+
+
+-------------------- How it works -------------------  
 
 When compressing a file, first the file to be compressed is read in char by char.
 Each char is added to a map that counts the apperance of that char.
